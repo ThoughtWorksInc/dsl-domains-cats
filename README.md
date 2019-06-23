@@ -5,6 +5,6 @@
 [![Latest version](https://index.scala-lang.org/ThoughtWorksInc/dsl-domains-cats/latest.svg)](https://index.scala-lang.org/ThoughtWorksInc/dsl-domains-cats)
 [![Scaladoc](https://javadoc.io/badge/com.thoughtworks.dsl/domains-cats_2.12.svg?label=scaladoc)](https://javadoc.io/page/com.thoughtworks.dsl/domains-cats_2.12/latest/com/thoughtworks/dsl/domains/cats$.html)
 
-**dsl-domains-cats** contains utilities to integrate Cats with [Dsl.scala](https://github.com/ThoughtWorksInc/Dsl.scala).
+**dsl-domains-cats** contains utilities to integrate Cats with [Dsl.scala](https://github.com/ThoughtWorksInc/Dsl.scala). It provides the `!`-notation for creating Cats monadic expressions.
 
 See [Scaladoc](https://javadoc.io/page/com.thoughtworks.dsl/domains-cats_2.12/latest/com/thoughtworks/dsl/domains/cats$.html) for more information.
