@@ -1,14 +1,15 @@
 package com.thoughtworks.dsl.domains
 
-import org.scalatest.{FreeSpec, Matchers}
 import _root_.cats.instances.stream._
 import com.thoughtworks.dsl.keywords.{Monadic, Shift, Yield}
 import com.thoughtworks.dsl.domains.cats._
+import org.scalatest.freespec.AnyFreeSpec
+import org.scalatest.matchers.should.Matchers
 
 /**
   * @author 杨博 (Yang Bo)
   */
-class catsSpec extends FreeSpec with Matchers {
+class catsSpec extends AnyFreeSpec with Matchers {
 
   "Given a continuation that uses Yield and Monadic expressions" - {
 
