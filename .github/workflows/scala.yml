@@ -15,7 +15,7 @@ jobs:
         scala:
         - 2.11.12
         - 2.12.15
-        - 2.13.7
+        - 2.13.4
 
     steps:
     - uses: actions/checkout@v2
