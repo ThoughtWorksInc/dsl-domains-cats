@@ -16,9 +16,13 @@ libraryDependencies += "com.thoughtworks.dsl" %%% "keywords-shift" % "1.5.5" % O
 
 libraryDependencies += "com.thoughtworks.dsl" %%% "keywords-yield" % "1.5.5" % Optional
 
-addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.5.5")
+addCompilerPlugin(
+  "com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.5.5"
+)
 
-addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.5")
+addCompilerPlugin(
+  "com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.5"
+)
 
 scalacOptions ++= {
   import Ordering.Implicits._
