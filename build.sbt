@@ -8,9 +8,9 @@ lazy val `domains-cats` =
 lazy val `domains-catsJVM` = `domains-cats`.jvm
 lazy val `domains-catsJS` = `domains-cats`.js
 
-organization in ThisBuild := "com.thoughtworks.dsl"
+ThisBuild / organization := "com.thoughtworks.dsl"
 
-scalacOptions in ThisBuild ++= {
+ThisBuild / scalacOptions ++= {
   if (scalaBinaryVersion.value == "2.11") {
     Some("-Ybackend:GenBCode")
   } else {
@@ -18,9 +18,9 @@ scalacOptions in ThisBuild ++= {
   }
 }
 
-skip in publish := true
+publish / skip := true
 
-parallelExecution in Global := {
+Global / parallelExecution := {
   import Ordering.Implicits._
   VersionNumber(scalaVersion.value).numbers >= Seq(2L, 12L)
 }
