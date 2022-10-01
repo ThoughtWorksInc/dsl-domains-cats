@@ -4,7 +4,7 @@ libraryDependencies += "org.typelevel" %%% "cats-free" % "2.0.0" % Optional // F
 
 libraryDependencies += "org.typelevel" %%% "cats-core" % "2.0.0"
 
-libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.2" % Test
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.13" % Test
 
 libraryDependencies += "com.thoughtworks.dsl" %%% "keywords-catch" % "1.5.5"
 
@@ -16,9 +16,13 @@ libraryDependencies += "com.thoughtworks.dsl" %%% "keywords-shift" % "1.5.5" % O
 
 libraryDependencies += "com.thoughtworks.dsl" %%% "keywords-yield" % "1.5.5" % Optional
 
-addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.5.5")
+addCompilerPlugin(
+  "com.thoughtworks.dsl" %% "compilerplugins-bangnotation" % "1.5.5"
+)
 
-addCompilerPlugin("com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.5")
+addCompilerPlugin(
+  "com.thoughtworks.dsl" %% "compilerplugins-reseteverywhere" % "1.5.5"
+)
 
 scalacOptions ++= {
   import Ordering.Implicits._
