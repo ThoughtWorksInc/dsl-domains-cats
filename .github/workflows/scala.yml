@@ -22,7 +22,7 @@ jobs:
         exclude:
         - scala: 2.12.15
           sbt-args: --addPluginSbtFile=project/plugins.sbt.scalajs06
-        - scala: 2.13.7
+        - scala: 2.13.11
           sbt-args: --addPluginSbtFile=project/plugins.sbt.scalajs06
         include:
         - scala: 2.12.13
