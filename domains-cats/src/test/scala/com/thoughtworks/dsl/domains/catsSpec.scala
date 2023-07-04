@@ -6,8 +6,8 @@ import com.thoughtworks.dsl.domains.cats._
 import org.scalatest.freespec.AnyFreeSpec
 import org.scalatest.matchers.should.Matchers
 
-/**
-  * @author 杨博 (Yang Bo)
+/** @author
+  *   杨博 (Yang Bo)
   */
 class catsSpec extends AnyFreeSpec with Matchers {
 
@@ -34,23 +34,56 @@ class catsSpec extends AnyFreeSpec with Matchers {
         generator should be(
           Seq(
             /**/ "Entering generator",
-            /****/ "Fork thread 0",
-            /******/ "Entering asyncFunction",
-            /********/ "Fork sub-thread 0",
-            /**********/ "Leaving asyncFunction",
-            /**********/ "Leaving generator",
-            /********/ "Fork sub-thread 1",
-            /**********/ "Leaving asyncFunction",
-            /**********/ "Leaving generator",
-            /****/ "Fork thread 1",
-            /******/ "Entering asyncFunction",
-            /********/ "Fork sub-thread 0",
-            /**********/ "Leaving asyncFunction",
-            /**********/ "Leaving generator",
-            /********/ "Fork sub-thread 1",
-            /**********/ "Leaving asyncFunction",
-            /**********/ "Leaving generator"
-          ))
+            /** *
+              */
+            "Fork thread 0",
+            /** ***
+              */
+            "Entering asyncFunction",
+            /** *****
+              */
+            "Fork sub-thread 0",
+            /** *******
+              */
+            "Leaving asyncFunction",
+            /** *******
+              */
+            "Leaving generator",
+            /** *****
+              */
+            "Fork sub-thread 1",
+            /** *******
+              */
+            "Leaving asyncFunction",
+            /** *******
+              */
+            "Leaving generator",
+            /** *
+              */
+            "Fork thread 1",
+            /** ***
+              */
+            "Entering asyncFunction",
+            /** *****
+              */
+            "Fork sub-thread 0",
+            /** *******
+              */
+            "Leaving asyncFunction",
+            /** *******
+              */
+            "Leaving generator",
+            /** *****
+              */
+            "Fork sub-thread 1",
+            /** *******
+              */
+            "Leaving asyncFunction",
+            /** *******
+              */
+            "Leaving generator"
+          )
+        )
       }
 
     }
