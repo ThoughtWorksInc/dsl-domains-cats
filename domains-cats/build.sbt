@@ -4,7 +4,7 @@ libraryDependencies += "org.typelevel" %%% "cats-free" % "2.0.0" % Optional // F
 
 libraryDependencies += "org.typelevel" %%% "cats-core" % "2.0.0"
 
-libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.18" % Test
+libraryDependencies += "org.scalatest" %%% "scalatest" % "3.2.19" % Test
 
 libraryDependencies += "com.thoughtworks.dsl" %%% "keywords-catch" % "1.5.5"
 
